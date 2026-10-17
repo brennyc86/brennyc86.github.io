@@ -1,11 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-  <ellipse cx="100" cy="70" rx="94" ry="64"/>
-  <!-- gedeelde, slanke steel -->
-  <path d="M100 30V110"/>
-  <!-- gespiegelde B: buiken naar links -->
-  <path d="M100 30H78C52 30 52 69 78 69H100"/>
-  <path d="M100 69H74C44 69 44 110 74 110H100"/>
-  <!-- K: armen naar rechts -->
-  <path d="M100 74L140 30"/>
-  <path d="M116 56L142 110"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <defs>
+    <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="100">
+      <ellipse cx="150" cy="50" rx="150" ry="50" fill="#fff"/>
+      <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+        <!-- gedeelde, slanke steel -->
+        <path d="M150 17V83" stroke-width="6"/>
+        <!-- gespiegelde B (vet): buiken naar links -->
+        <g stroke-width="10">
+          <path d="M150 22H126C100 22 100 50 126 50H150"/>
+          <path d="M150 50H122C92 50 92 78 122 78H150"/>
+          <!-- K (vet): armen naar rechts -->
+          <path d="M152 58L196 22"/>
+          <path d="M170 43L200 78"/>
+        </g>
+      </g>    </mask>
+  </defs>
+  <ellipse cx="150" cy="50" rx="150" ry="50" fill="#000" mask="url(#m)"/>
 </svg>
