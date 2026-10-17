@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brendan – start</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+<style>
+:root{--bg:#f4f6f9;--kaart:#fff;--tekst:#1b2430;--meta:#667085;--rand:#dde3ea;--accent:#0b6bcb}
+@media(prefers-color-scheme:dark){:root{--bg:#10151c;--kaart:#19212b;--tekst:#e6ebf1;--meta:#8b97a7;--rand:#2a3542;--accent:#5aa6f0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tekst);font:16px/1.4 system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 48px}
+h1{margin:0 0 4px;font-size:26px}
+.sub{color:var(--meta);margin-bottom:22px}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--meta);margin:26px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+a.k{display:flex;gap:12px;align-items:center;background:var(--kaart);border:1px solid var(--rand);border-radius:12px;padding:14px;text-decoration:none;color:inherit}
+a.k:hover{border-color:var(--accent)}
+.i{font-size:30px;line-height:1}
+.n{font-weight:700}
+.o{font-size:13px;color:var(--meta)}
+.nieuw{border-style:dashed}
+.tag{font-size:11px;background:var(--accent);color:#fff;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle}
+footer{margin-top:34px;font-size:12px;color:var(--meta)}
+</style>
+</head>
+<body>
+<main>
+  <h1>🏠 Brendan</h1>
+  <div class="sub">Mijn kleine sites en webapps</div>
+  <div id="inh"></div>
+  <footer id="vt"></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const kaart=(s,nieuw)=>`<a class="k ${nieuw?"nieuw":""}" href="${esc(s.url)}"><span class="i">${esc(s.icoon||"🔗")}</span><span><span class="n">${esc(s.naam)}</span>${nieuw?'<span class="tag">nieuw gevonden</span>':""}<br><span class="o">${esc(s.omschrijving||"")}</span></span></a>`;
+async function start(){
+  const cfg=await (await fetch("sites.json?"+Date.now())).json();
+  const groepen={};
+  cfg.sites.forEach(s=>(groepen[s.groep||"Overig"]=groepen[s.groep||"Overig"]||[]).push(s));
+  let h=Object.entries(groepen).map(([g,l])=>`<h2>${esc(g)}</h2><div class="grid">${l.map(s=>kaart(s)).join("")}</div>`).join("");
+  $("inh").innerHTML=h;
+  // automatisch zoeken naar GitHub Pages-sites die nog niet in de lijst staan
+  try{
+    const bekend=new Set([...cfg.sites.map(s=>s.repo),...(cfg.verborgen||[])].map(x=>x.toLowerCase()));
+    const repos=await (await fetch("https://api.github.com/users/brennyc86/repos?per_page=100&type=owner")).json();
+    const nieuw=repos.filter(r=>r.has_pages&&!r.private&&!bekend.has(r.name.toLowerCase())).map(r=>({naam:r.name,icoon:"🆕",url:`https://brennyc86.github.io/${r.name}/`,omschrijving:r.description||"Nog niet in sites.json"}));
+    if(nieuw.length)$("inh").insertAdjacentHTML("beforeend",`<h2>Automatisch gevonden</h2><div class="grid">${nieuw.map(s=>kaart(s,true)).join("")}</div>`);
+  }catch(e){}
+  $("vt").textContent="Lijst staat in sites.json in de repo brennyc86.github.io";
+}
+start().catch(e=>{$("inh").textContent="Kon de lijst niet laden: "+e});
+</script>
+</body>
+</html>
