@@ -3,6 +3,7 @@
   "sites": [
     {"naam": "Westerly zoeker", "icoon": "⛵", "url": "https://brennyc86.github.io/westerlyzoeker/", "repo": "westerlyzoeker", "omschrijving": "Westerly-zeilboten: prijzen, biedingen, veilingen en archief", "groep": "Zoekers"},
     {"naam": "Autozoeker", "icoon": "🚐", "url": "https://brennyc86.github.io/autozoeker/", "repo": "autozoeker", "omschrijving": "Goedkope hoge MPV voor de mini-camper", "groep": "Zoekers"},
+    {"naam": "Reisplanner P+Trein", "icoon": "🚆", "url": "https://brennyc86.github.io/reisplanner/", "repo": "reisplanner", "omschrijving": "Auto naar gratis P-station, trein verder, met laatste en laatste snelle terugreis", "groep": "Zoekers"},
     {"naam": "BKOS Brug", "icoon": "🧭", "url": "https://brennyc86.github.io/BKOS-Brug/", "repo": "BKOS-Brug", "omschrijving": "Boordcomputer-app: IO-paneel en netwerk (webapp)", "groep": "Boot"}
   ]
 }
