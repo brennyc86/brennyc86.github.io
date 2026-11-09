@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bestanden delen</title>
+<style>
+body{font:17px system-ui,sans-serif;background:#0f1b2d;color:#e8eef7;max-width:560px;margin:0 auto;padding:32px 16px;text-align:center}
+h1{font-size:22px}a.knop{display:inline-block;margin-top:16px;padding:14px 22px;border-radius:12px;background:#2d6cdf;color:#fff;text-decoration:none;font-weight:600}
+small{color:#9ab}
+</style></head><body>
+<h1>Bestanden delen met Claude</h1>
+<p id="m">Even kijken of er een uploadlink openstaat…</p>
+<script>
+// Claude zet de actuele tijdelijke link in link.json (alleen zolang hij openstaat).
+fetch('link.json?t=' + Date.now(), {cache: 'no-store'})
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => {
+    if (!d.url || !d.tot || Date.now() > d.tot) throw 0;
+    document.getElementById('m').innerHTML = 'De uploadlink staat open tot ' +
+      new Date(d.tot).toLocaleTimeString('nl-NL', {hour: '2-digit', minute: '2-digit'}) +
+      '.<br><a class="knop" href="' + d.url + '">Open uploadportaal</a>';
+    location.replace(d.url);
+  })
+  .catch(() => {
+    document.getElementById('m').innerHTML = 'Er staat nu geen uploadlink open.<br><small>Vraag Claude om het portaal te openen en ververs daarna deze pagina.</small>';
+  });
+</script>
+</body></html>

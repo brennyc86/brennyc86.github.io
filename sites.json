@@ -1,10 +1,56 @@
 {
-  "verborgen": ["BKOS-NUI", "brennyc86.github.io"],
+  "verborgen": [
+    "BKOS-NUI",
+    "brennyc86.github.io"
+  ],
   "sites": [
-    {"naam": "Westerly zoeker", "icoon": "⛵", "url": "https://brennyc86.github.io/westerlyzoeker/", "repo": "westerlyzoeker", "omschrijving": "Westerly-zeilboten: prijzen, biedingen, veilingen en archief", "groep": "Zoekers"},
-    {"naam": "Autozoeker", "icoon": "🚐", "url": "https://brennyc86.github.io/autozoeker/", "repo": "autozoeker", "omschrijving": "Goedkope hoge MPV voor de mini-camper", "groep": "Zoekers"},
-    {"naam": "Reisplanner P+Trein", "icoon": "🚆", "url": "https://brennyc86.github.io/reisplanner/", "repo": "reisplanner", "omschrijving": "Auto naar gratis P-station, trein verder, met laatste en laatste snelle terugreis", "groep": "Zoekers"},
-    {"naam": "BKOS Brug", "icoon": "🧭", "url": "https://brennyc86.github.io/BKOS-Brug/", "repo": "BKOS-Brug", "omschrijving": "Boordcomputer-app: IO-paneel en netwerk (webapp)", "groep": "Boot"},
-    {"naam": "Bestanden delen", "icoon": "📁", "url": "https://bkos-bestanden.brendan-koster.workers.dev/", "repo": "", "omschrijving": "Bestanden uitwisselen met Claude, alleen met een tijdelijke link", "groep": "Hulp"}
+    {
+      "naam": "Westerly zoeker",
+      "icoon": "⛵",
+      "url": "https://brennyc86.github.io/westerlyzoeker/",
+      "repo": "westerlyzoeker",
+      "omschrijving": "Westerly-zeilboten: prijzen, biedingen, veilingen en archief",
+      "groep": "Zoekers"
+    },
+    {
+      "naam": "Autozoeker",
+      "icoon": "🚐",
+      "url": "https://brennyc86.github.io/autozoeker/",
+      "repo": "autozoeker",
+      "omschrijving": "Goedkope hoge MPV voor de mini-camper",
+      "groep": "Zoekers"
+    },
+    {
+      "naam": "Reisplanner P+Trein",
+      "icoon": "🚆",
+      "url": "https://brennyc86.github.io/reisplanner/",
+      "repo": "reisplanner",
+      "omschrijving": "Auto naar gratis P-station, trein verder, met laatste en laatste snelle terugreis",
+      "groep": "Zoekers"
+    },
+    {
+      "naam": "BKOS Brug",
+      "icoon": "🧭",
+      "url": "https://brennyc86.github.io/BKOS-Brug/",
+      "repo": "BKOS-Brug",
+      "omschrijving": "Boordcomputer-app: IO-paneel en netwerk (webapp)",
+      "groep": "Boot"
+    },
+    {
+      "naam": "Bestanden delen",
+      "icoon": "📁",
+      "url": "https://bkos-bestanden.brendan-koster.workers.dev/",
+      "repo": "",
+      "omschrijving": "Bestanden uitwisselen met Claude, alleen met een tijdelijke link",
+      "groep": "Hulp"
+    },
+    {
+      "naam": "Bestanden delen",
+      "icoon": "📤",
+      "url": "https://brennyc86.github.io/bestanden/",
+      "repo": "brennyc86.github.io",
+      "omschrijving": "Bestanden uitwisselen met Claude (alleen open als Claude een link klaarzet)",
+      "groep": "Hulp"
+    }
   ]
 }
