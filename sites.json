@@ -37,19 +37,11 @@
       "groep": "Boot"
     },
     {
-      "naam": "Bestanden delen",
-      "icoon": "📁",
-      "url": "https://bkos-bestanden.brendan-koster.workers.dev/",
-      "repo": "",
-      "omschrijving": "Bestanden uitwisselen met Claude, alleen met een tijdelijke link",
-      "groep": "Hulp"
-    },
-    {
-      "naam": "Bestanden delen",
+      "naam": "Bestand uploaden",
       "icoon": "📤",
       "url": "https://brennyc86.github.io/bestanden/",
       "repo": "brennyc86.github.io",
-      "omschrijving": "Bestanden uitwisselen met Claude (alleen open als Claude een link klaarzet)",
+      "omschrijving": "Bestanden uploaden voor Claude (staat alleen open als Claude hem openzet)",
       "groep": "Hulp"
     }
   ]
