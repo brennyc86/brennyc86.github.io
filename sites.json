@@ -43,6 +43,14 @@
       "repo": "brennyc86.github.io",
       "omschrijving": "Bestanden uploaden voor Claude (staat alleen open als Claude hem openzet)",
       "groep": "Hulp"
+    },
+    {
+      "naam": "Tijdkompas",
+      "icoon": "🧭",
+      "url": "https://brennyc86.github.io/tijdkompas/",
+      "repo": "tijdkompas",
+      "omschrijving": "Planner werk/privé/hobby: projecten, taken, urgent/belangrijk en automatisch inroosteren",
+      "groep": "Planning"
     }
   ]
 }
