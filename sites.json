@@ -1,56 +1,64 @@
 {
-  "verborgen": [
-    "BKOS-NUI",
-    "brennyc86.github.io"
-  ],
-  "sites": [
-    {
-      "naam": "Westerly zoeker",
-      "icoon": "⛵",
-      "url": "https://brennyc86.github.io/westerlyzoeker/",
-      "repo": "westerlyzoeker",
-      "omschrijving": "Westerly-zeilboten: prijzen, biedingen, veilingen en archief",
-      "groep": "Zoekers"
-    },
-    {
-      "naam": "Autozoeker",
-      "icoon": "🚐",
-      "url": "https://brennyc86.github.io/autozoeker/",
-      "repo": "autozoeker",
-      "omschrijving": "Goedkope hoge MPV voor de mini-camper",
-      "groep": "Zoekers"
-    },
-    {
-      "naam": "Reisplanner P+Trein",
-      "icoon": "🚆",
-      "url": "https://brennyc86.github.io/reisplanner/",
-      "repo": "reisplanner",
-      "omschrijving": "Auto naar gratis P-station, trein verder, met laatste en laatste snelle terugreis",
-      "groep": "Zoekers"
-    },
-    {
-      "naam": "BKOS Brug",
-      "icoon": "🧭",
-      "url": "https://brennyc86.github.io/BKOS-Brug/",
-      "repo": "BKOS-Brug",
-      "omschrijving": "Boordcomputer-app: IO-paneel en netwerk (webapp)",
-      "groep": "Boot"
-    },
-    {
-      "naam": "Bestand uploaden",
-      "icoon": "📤",
-      "url": "https://brennyc86.github.io/bestanden/",
-      "repo": "brennyc86.github.io",
-      "omschrijving": "Bestanden uploaden voor Claude (staat alleen open als Claude hem openzet)",
-      "groep": "Hulp"
-    },
-    {
-      "naam": "Tijdkompas",
-      "icoon": "🧭",
-      "url": "https://brennyc86.github.io/tijdkompas/",
-      "repo": "tijdkompas",
-      "omschrijving": "Planner werk/privé/hobby: projecten, taken, urgent/belangrijk en automatisch inroosteren",
-      "groep": "Planning"
-    }
-  ]
+ "verborgen": [
+  "BKOS-NUI",
+  "brennyc86.github.io"
+ ],
+ "sites": [
+  {
+   "naam": "Westerly zoeker",
+   "icoon": "⛵",
+   "url": "https://brennyc86.github.io/westerlyzoeker/",
+   "repo": "westerlyzoeker",
+   "omschrijving": "Westerly-zeilboten: prijzen, biedingen, veilingen en archief",
+   "groep": "Zoekers"
+  },
+  {
+   "naam": "Autozoeker",
+   "icoon": "🚐",
+   "url": "https://brennyc86.github.io/autozoeker/",
+   "repo": "autozoeker",
+   "omschrijving": "Goedkope hoge MPV voor de mini-camper",
+   "groep": "Zoekers"
+  },
+  {
+   "naam": "Reisplanner P+Trein",
+   "icoon": "🚆",
+   "url": "https://brennyc86.github.io/reisplanner/",
+   "repo": "reisplanner",
+   "omschrijving": "Auto naar gratis P-station, trein verder, met laatste en laatste snelle terugreis",
+   "groep": "Zoekers"
+  },
+  {
+   "naam": "BKOS Brug",
+   "icoon": "🧭",
+   "url": "https://brennyc86.github.io/BKOS-Brug/",
+   "repo": "BKOS-Brug",
+   "omschrijving": "Boordcomputer-app: IO-paneel en netwerk (webapp)",
+   "groep": "Boot"
+  },
+  {
+   "naam": "Bestand uploaden",
+   "icoon": "📤",
+   "url": "https://brennyc86.github.io/bestanden/",
+   "repo": "brennyc86.github.io",
+   "omschrijving": "Bestanden uploaden voor Claude (staat alleen open als Claude hem openzet)",
+   "groep": "Hulp"
+  },
+  {
+   "naam": "Tijdkompas",
+   "icoon": "🧭",
+   "url": "https://brennyc86.github.io/tijdkompas/",
+   "repo": "tijdkompas",
+   "omschrijving": "Planner werk/privé/hobby: projecten, taken, urgent/belangrijk en automatisch inroosteren",
+   "groep": "Planning"
+  },
+  {
+   "naam": "BKOS lettertypen",
+   "icoon": "🔤",
+   "url": "https://brennyc86.github.io/bkos-lettertypen/",
+   "repo": "brennyc86.github.io",
+   "omschrijving": "Voorstel lettertypen voor boordcomputer + webapp (voorbeelden)",
+   "groep": "Boot"
+  }
+ ]
 }
