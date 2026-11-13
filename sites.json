@@ -51,14 +51,6 @@
    "repo": "tijdkompas",
    "omschrijving": "Planner werk/privé/hobby: projecten, taken, urgent/belangrijk en automatisch inroosteren",
    "groep": "Planning"
-  },
-  {
-   "naam": "BKOS lettertypen",
-   "icoon": "🔤",
-   "url": "https://brennyc86.github.io/bkos-lettertypen/",
-   "repo": "brennyc86.github.io",
-   "omschrijving": "Voorstel lettertypen voor boordcomputer + webapp (ronde 5: selectie)",
-   "groep": "Boot"
   }
  ]
 }
